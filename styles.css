@@ -1,3 +1,9 @@
 .title {
     color: #abcdefg;
 }
+
+.divider{
+    height: 3px;
+    background-color: blue;
+    border: 1px solid blue;
+}
