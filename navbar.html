@@ -2,19 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="navbar.css" />
+        <style>
+    .navbar {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .nav-left, .nav-right {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .nav-button {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+        background-color: #555;
+    }
+</style>
         <title></title>
+    
     </head>
     <body>
-        <nav class="vertical-nav">
-            <div class="logo">
-                <img src="your-logo.png" alt="Company Logo" />
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contacts</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar">
+    <div class="nav-left">
+        <a href="#home" class="nav-button">Home</a>
+        <a href="#contacts" class="nav-button">Contacts</a>
+        <a href="#about" class="nav-button">About</a>
+    </div>
+    <div class="nav-right">
+        <a href="#login" class="nav-button">Login</a>
+        <a href="#register" class="nav-button">Register</a>
+    </div>
+</nav>
     </body>
 </html>
